@@ -1,0 +1,629 @@
+.header {
+    position: fixed;
+    z-index: 1000;
+    height: 100px;
+    width: 100%;
+    background: rgba(34, 34, 34, 0.25);
+    padding: 18px;
+    -webkit-transition: all ease-out .5s;
+    -moz-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+    transition: all ease-out .5s;
+}
+
+/*.active {*/
+/*    background-color: rgba(34, 34, 34, 0.8);*/
+/*}*/
+
+/* NAVBAR */
+.navbar {
+    background-color: transparent;
+    /* backdrop-filter: blur(5px); */
+}
+
+.navbar ul li a {
+    font-weight: 500;
+    margin: 0px 10px;
+    color: #fff;
+}
+
+ul.nav1 li a.unani::before {
+    /* content: "";
+    position: relative;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scale(0);
+    transition: transfrom 0.3s ease-in-out; */
+
+    content: '';
+    position: absolute;
+    width: 5%;
+    height: 2px;
+    /* Adjust the thickness of the underline */
+    bottom: 0;
+    left: 5;
+    background-color: #fff;
+    /* Same as link color */
+    visibility: hidden;
+    transform: scaleX(0);
+    /* Initially, set the scale to 0, making the underline invisible */
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    /* Smooth transition for scaling and visibility */
+}
+
+ul.nav1 li a.unani:hover::before {
+    /* visibility: visible;
+    transform: scale(1); */
+
+    visibility: visible;
+    transform: scaleX(1);
+    /* Set the scale to 1 on hover, revealing the underline */
+}
+
+ul.nav1 li a:hover {
+    color: #fff;
+}
+
+.navbar ul li:hover .dd1 {
+    transition: .5s;
+    display: block;
+}
+
+.navbar ul li ul li:hover .dd2 {
+    display: block;
+}
+
+ul.dd1 {
+    backdrop-filter: blur(15px);
+    background-color: transparent;
+}
+
+ul.dd1 li a {
+    color: #000;
+}
+
+ul.dd2 {
+    top: 0;
+    left: -110%;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+}
+
+ul.dd1 li:hover a {
+    transition: .3s;
+    background-color: transparent;
+    color: #00000080;
+}
+
+ul.dd2 li:hover a {
+    transition: .2s;
+}
+
+ul.dd2 li a {
+    color: black !important;
+}
+
+ul.dd2 li a:hover {
+    color: #00000080 !important;
+}
+
+ul.nav1 li a::before {
+    /* content: "";
+    position: relative;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scale(0);
+    transition: transfrom 0.3s ease-in-out; */
+
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    /* Adjust the thickness of the underline */
+    bottom: 0;
+    left: 5;
+    background-color: #00000080;
+    /* Same as link color */
+    visibility: hidden;
+    transform: scaleX(0);
+    /* Initially, set the scale to 0, making the underline invisible */
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    /* Smooth transition for scaling and visibility */
+}
+
+ul.nav1 li a:hover::before {
+    /* visibility: visible;
+    transform: scale(1); */
+
+    visibility: visible;
+    transform: scaleX(1);
+    /* Set the scale to 1 on hover, revealing the underline */
+}
+
+/* Collapseable navbar */
+
+button.navbar-toggler {
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border: 2px solid #999;
+}
+
+/* .navbar-collapse {
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+} */
+
+
+
+/* New Dropdown */
+.dropdown-menu li {
+    position: relative;
+}
+
+.dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+
+.dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+}
+
+.dropdown-menu>li:hover>.dropdown-submenu {
+    display: block;
+}
+
+/* HOME */
+
+#home {
+    color: #fff;
+    background-image: url("img/bg6.jpg");
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+#home h3 {
+    padding-top: 250px;
+    font-size: 5vw;
+}
+
+#home p {
+    font-size: 3vw;
+}
+
+a.getstarted {
+    border: 3px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    margin-top: 30px;
+    padding: 8px 35px;
+    /* margin-bottom: 50px; */
+    font-weight: 600;
+    transition: .5s;
+    font-size: large;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+
+a.getstarted:hover {
+    border: 3px solid #bca2c8;
+    /* background-color: #bca2c8; */
+    background-color: #bca2c8b7;
+    color: #fff;
+    backdrop-filter: blur(20px);
+}
+
+
+
+/* ABOUT */
+
+div.aboutdescription {
+    display: inline-block;
+}
+
+div.aboutusimg {
+    background: url("img/about-img.jpg") center top no-repeat;
+    min-height: 300px;
+}
+
+div.abouticon {
+    border: 2px solid;
+    border-radius: 50px;
+    height: 70px;
+    width: 70px;
+    font-size: 25px;
+    color: #bca2c8;
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* FACTS */
+
+#facts {
+    background-color: #99999911;
+}
+
+#facts h2 {
+    font-weight: 700;
+}
+
+#facts h1 {
+    font-weight: 450;
+    font-size: 50px;
+    color: #bca2c8;
+}
+
+#facts h2,
+p.factp {
+    text-align: center;
+}
+
+p.factp {
+    color: #999;
+}
+
+/* SERVICES */
+
+#services h2,
+p.serp {
+    text-align: center;
+}
+
+p.serp {
+    color: #999;
+}
+
+div.servicesicon {
+    background-color: #b57fce;
+    border: 2px solid #b57fce;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -40px;
+    left: 40%;
+    transition: .2s;
+}
+
+div.servicesicon i {
+    background-color: #b57fce;
+    color: #fff;
+    font-size: 24px;
+    transition: .2s;
+}
+
+div.servicebox:hover i {
+    background-color: #fff;
+    color: #b57fce;
+    /* font-size: 30px; */
+}
+
+div.servicebox:hover div.servicesicon {
+    background-color: #fff;
+    color: #b57fce;
+    font-size: 24px;
+    transform: scale(1.2);
+    /* border: 2px solid; */
+    /* width: 70px;
+    height: 70px; */
+}
+
+div.serviceboxes {
+    text-align: center;
+}
+
+div.servicebox {
+    background-color: #99999911;
+    height: 220px;
+    width: 350px;
+    border: 1px solid #99999911;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+
+
+
+/* Call to action */
+
+#calltoaction {
+    background-image: url("img/bg6.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    /* min-height: 300px; */
+}
+
+div.callbtncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calltoaction h2 {
+    font-weight: 900;
+}
+
+a.callbtn {
+    border: 3px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    margin-top: 30px;
+    padding: 8px 40px;
+    font-weight: 600;
+    transition: .5s;
+    font-size: large;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+
+a.callbtn:hover {
+    border: 3px solid #c4a3c9b7;
+    /* background-color: #bca2c8; */
+    background-color: #c4a3c9b7;
+    color: #fff;
+    backdrop-filter: blur(20px);
+}
+
+/* PORTFOLIO */
+
+#portfolio {
+    background-color: #fff;
+}
+
+h2.porth {
+    text-align: center;
+}
+
+p.portp {
+    text-align: center;
+    color: #999;
+}
+
+div.portfoliobtn {
+    text-align: center;
+
+}
+
+div.portfoliobtn a {
+    background-color: #fff;
+    color: #999999e1;
+    height: 40px;
+    width: 60px;
+    margin: 0px 5px;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+div.portfoliobtn a:hover,
+a:active {
+    background-color: #b57fce;
+    color: #fff;
+}
+
+div.products div.product {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+img.proimg {
+    height: 280px;
+    width: 380px;
+}
+
+div.productdes {
+    visibility: hidden;
+    height: 90px;
+    position: relative;
+    top: -90px;
+    background-color: #b57fce;
+    padding: 10px 15px;
+    animation: fadeIn 2 ease-in-out;
+}
+
+a.productlink {
+    position: relative;
+    right: 15px;
+}
+
+div.productdes a i {
+    font-size: 20px;
+}
+
+div.product:hover div.productdes {
+    visibility: visible;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.product img {
+    width: 100%;
+}
+
+ul.productfilterbtn button {
+    color: #999;
+    background-color: #fff;
+    margin: 0px 5px;
+    transition: .3s;
+    height: 40px;
+    width: 60px;
+}
+
+/* After bootstrap tabable pnae */
+
+ul.productfilterbtn button:hover {
+    color: #99999981;
+    /* background-color: #b57fce; */
+}
+
+/* ul.productfilterbtn button:active {
+    background-color: #b57fce;
+}
+
+ul.productfilterbtn button:focus {
+    background-color: #b57fce;
+} */
+
+/* TEAM */
+
+#team {
+    background-color: #fff9;
+}
+
+div.memberdetail img {
+    height: 200px;
+    width: min-content;
+    margin-top: 5vw;
+}
+
+div.memberdetail {
+    text-align: center;
+    /* overflow-x:auto; */
+}
+
+div.memberdetail h5 {
+    margin-top: 1vw;
+}
+
+div.memberdetail a {
+    margin: 0px .5vw;
+}
+
+/* div.teamcard div.card {
+    border: none;
+    height: 350px;
+    width: 350px;
+    color: #747474;
+}
+
+div.teamcard div.card .card-body {
+    text-align: center;
+}
+
+div.teamcard div.card img {
+    height: 250px;
+    width: 250px;
+}
+
+div.teamcard div.card a {
+    padding: 0px 3px;
+}
+ */
+
+div.memberdetail a i {
+    color: #666666;
+}
+
+div.memberdetail a:hover i {
+    color: #bca2c8;
+    transition: .1s;
+}
+
+/* CONTACT */
+
+#contact {
+    background-color: rgba(212, 212, 212, 0.176)
+}
+
+/* div.contactdetails ul {} */
+
+div.contactdetails ul li {
+    list-style: none;
+}
+
+div.contactdetails ul li i {
+    display: inline-block;
+    font-size: 30px;
+}
+
+div.form form input {
+    width: 80%;
+    border-radius: 0;
+}
+
+div.form form textarea {
+    padding-left: 10px;
+    width: 80%;
+    height: 120px;
+}
+
+div.form form button.formbutton {
+    border-radius: 0;
+    background-color: #b57fce;
+    color: #fff;
+    width: 160px;
+    height: 40px;
+    transition: .5s;
+}
+
+div.form form button.formbutton:hover {
+    background-color: #bca2c8;
+}
+
+div.social-links a i {
+    border-radius: 50px;
+    color: #666666;
+    font-size: 25px;
+    margin: 0px 5px;
+    transition: .5s;
+}
+
+div.social-links a:hover i {
+    color: #bca2c8;
+}
+
+/* FOOTER */
+
+footer {
+    height: 120px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    transition: .2s;
+    color: #ffffff83;
+}
+
+#portfolio .product{
+    transition: all 1s ease-in-out;
+}
