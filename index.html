@@ -3,23 +3,26 @@
 
 <head>
     <title>Regna</title>
-    <!-- Required meta tags -->
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- CSS file link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-
-    <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
 
-    <!-- Aniamte.css -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
@@ -27,8 +30,7 @@
 
 <body>
     <header>
-        <!-- place navbar here -->
-        <nav class="navbar fixed-top navbar-expand-sm header">
+        <nav class="navbar fixed-top navbar-expand-sm header" id="mainNavbar">
             <div class="container">
                 <a class="navbar-brand" href="#" style="font-size: 35px; color:#fff; font-weight: 600;">REGNA</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -53,7 +55,6 @@
                             <a class="nav-link unani" href="#team">TEAM</a>
                         </li>
 
-                        <!-- Old dropdown -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle unani" href="#" id="navbarScrollingDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -82,9 +83,6 @@
                                 <li><a class="dropdown-item" href="#">DROP DOWN 4</a></li>
                             </ul>
                         </li>
-
-                        <!-- New Dropdown -->
-
 
                         <li class="nav-item">
                             <a class="nav-link unani" href="#contact">CONTACT</a>
@@ -160,19 +158,19 @@
                 <div class="container-fluid pt-5 pb-5">
                     <div class="row">
                         <div class="col-sm factnumbers text-center">
-                            <h1>232</h1>
+                            <h1 class="fact-value" data-target="232">0</h1>
                             <p>Clients</p>
                         </div>
                         <div class="col-sm factnumbers text-center">
-                            <h1>534</h1>
+                            <h1 class="fact-value" data-target="534">0</h1>
                             <p>Projects</p>
                         </div>
                         <div class="col-sm factnumbers text-center">
-                            <h1>1463</h1>
+                            <h1 class="fact-value" data-target="1463">0</h1>
                             <p>Hours Of Support</p>
                         </div>
                         <div class="col-sm factnumbers text-center">
-                            <h1>42</h1>
+                            <h1 class="fact-value" data-target="42">0</h1>
                             <p>Hard Workers</p>
                         </div>
                     </div>
@@ -233,7 +231,7 @@
         </section>
 
         <section id="calltoaction">
-            <div class="container pt-4 pb-4 wow animate__animated animate__fadeIn">
+            <div class="container pt-4 pb-4 wow animate__animated animate__fadeInUp">
                 <div class="row pt-5 pb-5">
                     <div class="container-fluid col-lg-9">
                         <h2>Call To Action</h2>
@@ -253,104 +251,8 @@
                 <h2 class="porth pt-5">PORTFOLIO</h2>
                 <p class="portp">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                 </p>
-                <!-- <div class="portfoliobtn pb-4">
-                <a href="#portfolio" class="btn">All</a>
-                <a href="#portfolio" class="btn">App</a>
-                <a href="#portfolio" class="btn">Card</a>
-                <a href="#portfolio" class="btn">Web</a>
-            </div>
-            <div class="products container">
-                <div class="row ">
-                    <div class="col-4">
-                        <div class="product">
-                            <img src="img/products/portfolio-1.jpg" alt="" class="proimg">
-                            <div class="productdes">
-                                <h2>App 1</h2>
-                                <p>App</p>
-                                <a href="#" class="productlink"><i class="bx bx-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="product">
-                            <img src="img/products/portfolio-2.jpg" alt="" class="proimg">
-                            <div class="productdes">
-                                <h2>Web 1</h2>
-                                <p>Web</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="product">
-                            <img src="img/products/portfolio-3.jpg" alt="" class="proimg">
-                            <div class="productdes">
-                                <h2>App 2</h2>
-                                <p>App</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-4">
-                        <div class="product">
-                            <img src="img/products/portfolio-4.jpg" alt="" class="proimg">
-                            <div class="productdes">
-                                <h2>Card 2</h2>
-                                <p>Card</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="product">
-                            <img src="img/products/portfolio-5.jpg" alt="" class="proimg">
-                            <div class="productdes">
-                                <h2>Web 2</h2>
-                                <p>Web</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="product">
-                            <img src="img/products/portfolio-6.jpg" alt="" class="proimg">
-                            <div class="productdes">
-                                <h2>App 3</h2>
-                                <p>App</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-4">
-                        <div class="product">
-                            <img src="img/products/portfolio-7.jpg" alt="" class="proimg">
-                            <div class="productdes">
-                                <h2>Card 1</h2>
-                                <p>Card</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="product">
-                            <img src="img/products/portfolio-8.jpg" alt="" class="proimg">
-                            <div class="productdes">
-                                <h2>Card 3</h2>
-                                <p>Card</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="product">
-                            <img src="img/products/portfolio-9.jpg" alt="" class="proimg">
-                            <div class="productdes">
-                                <h2>Web 3</h2>
-                                <p>Web</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-                <!-- Bootstrap tabbable pane navbar -->
+                <ul class="nav nav-pills mt-5 mb-5  justify-content-center productfilterbtn" id="pills-tab"
+                    role="tablist">
                 <ul class="nav nav-pills mt-5 mb-5  justify-content-center productfilterbtn" id="pills-tab"
                     role="tablist">
                     <li class="nav-item" role="presentation">
@@ -374,12 +276,11 @@
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
                         aria-labelledby="pills-all-tab" tabindex="0">
-                        <!-- All -->
                         <div class="products container animate__animated animate__fadeInUp">
                             <div class="row ">
                                 <div class="col-lg">
                                     <div class="product">
-                                        <img src="img/products/portfolio-1.jpg" alt="" class="proimg">
+                                        <img src="assets/img/products/portfolio-1.jpg" alt="" class="proimg">
                                         <div class="productdes element-to-animate">
                                             <h2>App 1</h2>
                                             <p>App</p>
@@ -389,7 +290,7 @@
                                 </div>
                                 <div class="col-lg">
                                     <div class="product">
-                                        <img src="img/products/portfolio-2.jpg" alt="" class="proimg">
+                                        <img src="assets/img/products/portfolio-2.jpg" alt="" class="proimg">
                                         <div class="productdes">
                                             <h2>Web 1</h2>
                                             <p>Web</p>
@@ -398,7 +299,7 @@
                                 </div>
                                 <div class="col-lg">
                                     <div class="product">
-                                        <img src="img/products/portfolio-3.jpg" alt="" class="proimg">
+                                        <img src="assets/img/products/portfolio-3.jpg" alt="" class="proimg">
                                         <div class="productdes">
                                             <h2>App 2</h2>
                                             <p>App</p>
@@ -409,7 +310,7 @@
                             <div class="row">
                                 <div class="col-lg">
                                     <div class="product">
-                                        <img src="img/products/portfolio-4.jpg" alt="" class="proimg">
+                                        <img src="assets/img/products/portfolio-4.jpg" alt="" class="proimg">
                                         <div class="productdes">
                                             <h2>Card 2</h2>
                                             <p>Card</p>
@@ -418,7 +319,7 @@
                                 </div>
                                 <div class="col-lg">
                                     <div class="product">
-                                        <img src="img/products/portfolio-5.jpg" alt="" class="proimg">
+                                        <img src="assets/img/products/portfolio-5.jpg" alt="" class="proimg">
                                         <div class="productdes">
                                             <h2>Web 2</h2>
                                             <p>Web</p>
@@ -427,7 +328,7 @@
                                 </div>
                                 <div class="col-lg">
                                     <div class="product">
-                                        <img src="img/products/portfolio-6.jpg" alt="" class="proimg">
+                                        <img src="assets/img/products/portfolio-6.jpg" alt="" class="proimg">
                                         <div class="productdes">
                                             <h2>App 3</h2>
                                             <p>App</p>
@@ -438,7 +339,7 @@
                             <div class="row">
                                 <div class="col-lg">
                                     <div class="product">
-                                        <img src="img/products/portfolio-7.jpg" alt="" class="proimg">
+                                        <img src="assets/img/products/portfolio-7.jpg" alt="" class="proimg">
                                         <div class="productdes">
                                             <h2>Card 1</h2>
                                             <p>Card</p>
@@ -447,7 +348,7 @@
                                 </div>
                                 <div class="col-lg">
                                     <div class="product">
-                                        <img src="img/products/portfolio-8.jpg" alt="" class="proimg">
+                                        <img src="assets/img/products/portfolio-8.jpg" alt="" class="proimg">
                                         <div class="productdes">
                                             <h2>Card 3</h2>
                                             <p>Card</p>
@@ -456,7 +357,7 @@
                                 </div>
                                 <div class="col-lg">
                                     <div class="product">
-                                        <img src="img/products/portfolio-9.jpg" alt="" class="proimg">
+                                        <img src="assets/img/products/portfolio-9.jpg" alt="" class="proimg">
                                         <div class="productdes">
                                             <h2>Web 3</h2>
                                             <p>Web</p>
@@ -468,12 +369,11 @@
                     </div>
                     <div class="tab-pane fade" id="pills-app" role="tabpanel" aria-labelledby="pills-app-tab"
                         tabindex="0">
-                        <!-- App -->
                         <div class="products container">
                             <div class="row ">
                                 <div class="col-lg">
                                     <div class="product">
-                                        <img src="img/products/portfolio-1.jpg" alt="" class="proimg">
+                                        <img src="assets/img/products/portfolio-1.jpg" alt="" class="proimg">
                                         <div class="productdes">
                                             <h2>App 1</h2>
                                             <p>App</p>
@@ -483,7 +383,7 @@
                                 </div>
                                 <div class="col-lg">
                                     <div class="product">
-                                        <img src="img/products/portfolio-3.jpg" alt="" class="proimg">
+                                        <img src="assets/img/products/portfolio-3.jpg" alt="" class="proimg">
                                         <div class="productdes">
                                             <h2>App 2</h2>
                                             <p>App</p>
@@ -492,7 +392,7 @@
                                 </div>
                                 <div class="col-lg">
                                     <div class="product">
-                                        <img src="img/products/portfolio-6.jpg" alt="" class="proimg">
+                                        <img src="assets/img/products/portfolio-6.jpg" alt="" class="proimg">
                                         <div class="productdes">
                                             <h2>App 3</h2>
                                             <p>App</p>
@@ -504,12 +404,11 @@
                     </div>
                     <div class="tab-pane fade" id="pills-card" role="tabpanel" aria-labelledby="pills-card-tab"
                         tabindex="0">
-                        <!-- Card -->
                         <div class="products container">
                             <div class="row ">
                                 <div class="col-lg">
                                     <div class="product">
-                                        <img src="img/products/portfolio-4.jpg" alt="" class="proimg">
+                                        <img src="assets/img/products/portfolio-4.jpg" alt="" class="proimg">
                                         <div class="productdes">
                                             <h2>Card 1</h2>
                                             <p>Card</p>
@@ -519,7 +418,7 @@
                                 </div>
                                 <div class="col-lg">
                                     <div class="product">
-                                        <img src="img/products/portfolio-7.jpg" alt="" class="proimg">
+                                        <img src="assets/img/products/portfolio-7.jpg" alt="" class="proimg">
                                         <div class="productdes">
                                             <h2>Card 2</h2>
                                             <p>Card</p>
@@ -528,7 +427,7 @@
                                 </div>
                                 <div class="col-lg">
                                     <div class="product">
-                                        <img src="img/products/portfolio-8.jpg" alt="" class="proimg">
+                                        <img src="assets/img/products/portfolio-8.jpg" alt="" class="proimg">
                                         <div class="productdes">
                                             <h2>Card 3</h2>
                                             <p>Card</p>
@@ -540,12 +439,11 @@
                     </div>
                     <div class="tab-pane fade" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab"
                         tabindex="0">
-                        <!-- Web -->
                         <div class="products container">
                             <div class="row ">
                                 <div class="col-lg">
                                     <div class="product">
-                                        <img src="img/products/portfolio-2.jpg" alt="" class="proimg">
+                                        <img src="assets/img/products/portfolio-2.jpg" alt="" class="proimg">
                                         <div class="productdes">
                                             <h2>Web 1</h2>
                                             <p>Web</p>
@@ -555,7 +453,7 @@
                                 </div>
                                 <div class="col-lg">
                                     <div class="product">
-                                        <img src="img/products/portfolio-5.jpg" alt="" class="proimg">
+                                        <img src="assets/img/products/portfolio-5.jpg" alt="" class="proimg">
                                         <div class="productdes">
                                             <h2>Web 2</h2>
                                             <p>Web</p>
@@ -564,7 +462,7 @@
                                 </div>
                                 <div class="col-lg">
                                     <div class="product">
-                                        <img src="img/products/portfolio-9.jpg" alt="" class="proimg">
+                                        <img src="assets/img/products/portfolio-9.jpg" alt="" class="proimg">
                                         <div class="productdes">
                                             <h2>Web 3</h2>
                                             <p>Web</p>
@@ -587,7 +485,7 @@
                     <div class="row">
                         <div class="members col-lg">
                             <div class="memberdetail">
-                                <img src="img/team-1.jpg" alt="Team1">
+                                <img src="assets/img/team-1.jpg" alt="Team1">
                                 <h5 class="card-title">Walter White</h5>
                                 <p class="card-text">Chief Executive Officer</p>
                                 <a href="#"><i class="bi bi-twitter"></i></a>
@@ -598,7 +496,7 @@
                         </div>
                         <div class="members col-lg">
                             <div class="memberdetail">
-                                <img src="img/team-2.jpg" alt="Team1">
+                                <img src="assets/img/team-2.jpg" alt="Team1">
                                 <h5 class="card-title">Walter White</h5>
                                 <p class="card-text">Chief Executive Officer</p>
                                 <a href="#"><i class="bi bi-twitter"></i></a>
@@ -609,7 +507,7 @@
                         </div>
                         <div class="members col-lg">
                             <div class="memberdetail">
-                                <img src="img/team-3.jpg" alt="Team1">
+                                <img src="assets/img/team-3.jpg" alt="Team1">
                                 <h5 class="card-title">Walter White</h5>
                                 <p class="card-text">Chief Executive Officer</p>
                                 <a href="#"><i class="bi bi-twitter"></i></a>
@@ -620,7 +518,7 @@
                         </div>
                         <div class="members col-lg">
                             <div class="memberdetail">
-                                <img src="img/team-4.jpg" alt="Team1">
+                                <img src="assets/img/team-4.jpg" alt="Team1">
                                 <h5 class="card-title">Walter White</h5>
                                 <p class="card-text">Chief Executive Officer</p>
                                 <a href="#"><i class="bi bi-twitter"></i></a>
@@ -629,66 +527,6 @@
                                 <a href="#"><i class="bi bi-linkedin"></i></a>
                             </div>
                         </div>
-                        <!-- <div class="col-3">
-                            <div class="teamcard">
-                                <div class="card">
-                                    <img src="img/team-1.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-                                    <div class="card-body">
-                                        <h5 class="card-title">Walter White</h5>
-                                        <p class="card-text">Chief Executive Officer</p>
-                                        <a href="#"><i class="bi bi-twitter"></i></a>
-                                        <a href="#"><i class="bi bi-facebook"></i></a>
-                                        <a href="#"><i class="bi bi-instagram"></i></a>
-                                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="teamcard">
-                                <div class="card">
-                                    <img src="img/team-2.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-                                    <div class="card-body">
-                                        <h5 class="card-title">Sarah Jhinson</h5>
-                                        <p class="card-text">Product Manager</p>
-                                        <a href="#"><i class="bi bi-twitter"></i></a>
-                                        <a href="#"><i class="bi bi-facebook"></i></a>
-                                        <a href="#"><i class="bi bi-instagram"></i></a>
-                                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="teamcard">
-                                <div class="card">
-                                    <img src="img/team-3.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-                                    <div class="card-body">
-                                        <h5 class="card-title">William Anderson</h5>
-                                        <p class="card-text">CTO</p>
-                                        <a href="#"><i class="bi bi-twitter"></i></a>
-                                        <a href="#"><i class="bi bi-facebook"></i></a>
-                                        <a href="#"><i class="bi bi-instagram"></i></a>
-                                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="teamcard">
-                                <div class="card">
-                                    <img src="img/team-4.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-                                    <div class="card-body">
-                                        <h5 class="card-title">Amanda Jepson</h5>
-                                        <p class="card-text">Accountant</p>
-                                        <a href="#"><i class="bi bi-twitter"></i></a>
-                                        <a href="#"><i class="bi bi-facebook"></i></a>
-                                        <a href="#"><i class="bi bi-instagram"></i></a>
-                                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </section>
@@ -750,20 +588,69 @@
             </section>
     </main>
     <footer>
-        <!-- place footer here -->
         <center>
             <p class="pt-4">© Copyright <b>Regna</b>. All Rights Reserved</p>
-            <p>Designed by <a href="#">Rahil</a></p>
         </center>
     </footer>
-    <!-- Js -->
-    <script src="wow.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        const navbar = document.getElementById('mainNavbar');
 
-    <!-- Bootstrap JavaScript Libraries -->
+        const updateNavbarState = () => {
+            if (!navbar) return;
+            navbar.classList.toggle('scrolled', window.scrollY > 20);
+        };
+
+        window.addEventListener('scroll', updateNavbarState, { passive: true });
+        window.addEventListener('load', updateNavbarState);
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const counters = document.querySelectorAll('.fact-value');
+            const factsSection = document.getElementById('facts');
+
+            const animateCounters = () => {
+                counters.forEach((counter) => {
+                    const target = Number(counter.getAttribute('data-target'));
+                    const duration = 1400;
+                    const startTime = performance.now();
+
+                    const step = (now) => {
+                        const progress = Math.min((now - startTime) / duration, 1);
+                        const value = Math.floor(progress * target);
+                        counter.textContent = value.toLocaleString();
+
+                        if (progress < 1) {
+                            requestAnimationFrame(step);
+                        } else {
+                            counter.textContent = target.toLocaleString();
+                        }
+                    };
+
+                    requestAnimationFrame(step);
+                });
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        observer.disconnect();
+                    }
+                });
+            }, { threshold: 0.4 });
+
+            if (factsSection) {
+                observer.observe(factsSection);
+            }
+        });
+    </script>
+
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
         </script>
